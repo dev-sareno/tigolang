@@ -2,10 +2,9 @@ name: CD pipeline
 on:
   push:
     branches:
-      # - main
-      - feat/github-actions
+      - main
 jobs:
-  build:
+  build_and_push:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
